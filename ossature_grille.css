@@ -1,0 +1,31 @@
+body {
+ display:grid;
+ width:100%;
+ margin:0px;
+ border:1px solid blue;
+ grid-template-areas:"header header"
+                     "nav nav"
+                     "section aside"
+                     "footer footer";
+ grid-template-rows:80px 40px minmax(400px,auto) auto;
+ grid-template-columns: 1fr 25%;                   
+}
+.border{
+    border:1px solid blue;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+aside{
+    grid-area: aside;
+}
+footer{
+    grid-area: footer;
+}
+section{
+    grid-area: section;
+}
+
