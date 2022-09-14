@@ -11,7 +11,7 @@ body {
  grid-template-columns: 1fr 25%;                   
 }
 .border{
-    border:1px solid blue;
+    background-color: solid blue;
 }
 header{
     grid-area: header;
@@ -28,4 +28,9 @@ footer{
 section{
     grid-area: section;
 }
-
+.connection{text}
+body {@media (max-widht:800px) 
+    display: grid;
+    grid-template-rows: 80px auto minmax(400px auto) auto;
+    grid-template-columns:  100%;
+}
